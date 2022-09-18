@@ -42,6 +42,15 @@ app.get('/api/home/getShowContent', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})
  })
 
+app.get('/api/robot', (req,res) => { 
+    res.send({"code":50008,"message":"Bad token","data":null})
+ })
+
+
+app.get('/api/robot/robotList ', (req,res) => { 
+    res.json({"code":1,"msg":"OK","time":1663468332,"data":{"list":[{"id":1,"name":"3 Days","day":3,"bili":"0.022","min_num":"100","max_num":"999999","shouxu":"0","name_en":"3 Days"},{"id":2,"name":"30 Days","day":30,"bili":"0.028","min_num":"999999","max_num":"999999","shouxu":"0","name_en":"30 Days"},{"id":3,"name":"60 Days","day":60,"bili":"0.032","min_num":"999999","max_num":"999999","shouxu":"0","name_en":"60 Days"},{"id":4,"name":"90 Days","day":90,"bili":"0.045","min_num":"999999","max_num":"999999","shouxu":"0","name_en":"90 Days"},{"id":5,"name":"120 Days","day":120,"bili":"0.06","min_num":"999999","max_num":"999999","shouxu":"0","name_en":"120 Days"},{"id":6,"name":"180 Days","day":180,"bili":"0.08","min_num":"999999","max_num":"999999","shouxu":"0","name_en":"180 Days"}],"balance":"0.0000"}})
+ })
+
 
 app.get('/api/user/profile', (req,res) => { 
     res.json({"code":1,"msg":"OK","time":1663467902,"data":{"username":"Douglas","invite_code":"120297","headpic":"\/static_new6\/headimg\/151.png","balance":"10.000","freeze_balance":"0.000","tel":"douglasjefferson9636@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":120297,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/www.nassshop.com\/#\/login\/register?code=120297","otc_member_level":0}})
