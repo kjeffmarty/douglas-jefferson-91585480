@@ -52,6 +52,12 @@ app.get('/api/home/getShowContent', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})
  })
 
+ 
+app.get('/api/user/getTopupAdds3', (req,res) => { 
+    res.json({"code":1,"msg":"OK","time":1663481494,"data":[{"name":"onepay","name2":"onepay","ico":"\/public\/img\/onepay-icon.png","exchange_rate":1,"address":""},{"name":"USDT-TRC20","name2":"USDT-TRC20","ico":"\/public\/img\/usdt-icon.png","exchange_rate":5,"address":"TVb38sF2EPE2PwSxPCa4j7px27KF5Qmm1C"},{"name":"USDT-ERC20","name2":"USDT-ERC20","ico":"\/public\/img\/usdt-icon.png","exchange_rate":5,"address":"0x568513d1c6Eb485b385706616CC77a5e7505fbc5"},{"name":"BTC","name2":"BTC","ico":"\/public\/img\/btc-icon.png","exchange_rate":175000,"address":"3PxGdee7tf7hdnd5e4zKnbYmKBvvbSSQii"},{"name":"ETH","name2":"ETH","ico":"\/public\/img\/eth-icon.png","exchange_rate":12500,"address":"0x568513d1c6Eb485b385706616CC77a5e7505fbc5"}]})
+ })
+
+
 
  app.post('/api/user/withdrawalFreeMonth', (req,res) => { 
     res.json({"code":0,"msg":"Withdrawal range 20 - 50000","time":1663481572,"data":null})
