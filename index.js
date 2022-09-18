@@ -34,7 +34,6 @@ app.get('/api/team/getDetails?level=1&limit=20&page=1', (req,res) => {
     res.json({"code":1,"msg":"OK","time":1663469836,"data":[{"id":124604,"username":"MDZ_txg4sr","addtime":"2022-09-17 08:19:11","balance":"10.000"},{"id":120725,"username":"douglas","addtime":"2022-09-04 08:18:06","balance":"10.000"},{"id":120481,"username":"Jeffdodo","addtime":"2022-09-03 08:12:39","balance":"10.000"}]})
  })
 
-
 app.post('/api/auth/login', (req,res) => {
     res.json({"code":1,"msg":"OK","time":1663461589,"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJhdWQiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJpYXQiOjE2NjM0NjE1ODksIm5iZiI6MTY2MzQ2MTU4OSwiZXhwIjoxNjY4NjQ1NTg5LCJqdGkiOnsiaWQiOjEyMDI5NywidHlwZSI6Ikg1In19.0cW6VS_bTaCfyjBPUicVsM5YwslzH7Awt_8HvXZx7EY","userId":120297,"otc_member_level":0}})
  })
