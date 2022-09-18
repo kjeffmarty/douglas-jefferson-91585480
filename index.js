@@ -52,6 +52,20 @@ app.get('/api/robot/robotList', (req,res) => {
  })
 
 
+
+app.get('/api/info', (req,res) => { 
+    res.send({"code":50008,"message":"Bad token","data":null})
+ })
+
+
+app.get('/api/info/getFaq', (req,res) => { 
+    res.send({"code":1,"msg":"OK","time":1663469340,"data":[{"detail":"<ol>\r\n\t<li><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">How to register as a member?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:28px\"><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">The system adopts the invitation system to register new members. In order to ensure the income of registered members and prevent excessive registration from reducing income, new members can only register at the invitation of existing members.<\/span><\/span><\/p>\r\n\r\n<ol start=\"2\">\r\n\t<li><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">How to deposit and what payment methods?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:28px\"><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">The system is open to many countries, we provide international payment methods: usdt (trc20). We also support our own currencies for different countries.<\/span><\/span><\/p>\r\n\r\n<ol start=\"3\">\r\n\t<li><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">How can I invest and earn income?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:28px\"><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">You can buy an robot in the system, and you can get stable automatic swipe income and interest every day. All the income can be withdrawn to your bank card.<\/span><\/span><\/p>\r\n\r\n<ol start=\"4\">\r\n\t<li><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Is there a limit on the purchase amount?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:28px\"><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">Yes, in order to let more members have the opportunity to obtain income, each account of the system has a maximum purchase amount.<\/span><\/span><\/p>\r\n\r\n<ol start=\"5\">\r\n\t<li><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">How to deal with the problems in the operation?<\/span><\/span><\/li>\r\n<\/ol>\r\n\r\n<p style=\"margin-left:28px\"><span style=\"font-size:11px;\"><span style=\"font-family:Arial,Helvetica,sans-serif;\">You can contact online customer service at any time to help complete all operations.<\/span><\/span><\/p>\r\n\r\n<p style=\"text-align:justify\">&nbsp;<\/p>","title":"Common Questions"}]})
+ })
+
+
+
+
+
 app.get('/api/user/profile', (req,res) => { 
     res.json({"code":1,"msg":"OK","time":1663467902,"data":{"username":"Douglas","invite_code":"120297","headpic":"\/static_new6\/headimg\/151.png","balance":"10.000","freeze_balance":"0.000","tel":"douglasjefferson9636@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":120297,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/www.nassshop.com\/#\/login\/register?code=120297","otc_member_level":0}})
  })
