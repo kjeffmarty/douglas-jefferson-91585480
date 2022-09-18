@@ -53,7 +53,7 @@ app.get('/api/home/getShowContent', (req,res) => {
  })
 
 
- app.post('api/user/withdrawalFreeMonth', (req,res) => { 
+ app.post('/api/user/withdrawalFreeMonth', (req,res) => { 
     res.json({"code":0,"msg":"Withdrawal range 20 - 50000","time":1663481572,"data":null})
  })
 
