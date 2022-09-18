@@ -52,6 +52,11 @@ app.get('/api/home/getShowContent', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})
  })
 
+app.post('/api/user/addBank', (req,res) => { 
+    res.json({"code":1,"msg":"OK","time":1663480858,"data":null})
+ })
+
+
 app.get('/api/robot', (req,res) => { 
     res.send({"code":50008,"message":"Bad token","data":null})
  })
