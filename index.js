@@ -42,6 +42,12 @@ app.get('/api/home/getShowContent', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})
  })
 
+
+app.get('/api/user/profile', (req,res) => { 
+    res.json({"code":1,"msg":"OK","time":1663467902,"data":{"username":"Douglas","invite_code":"120297","headpic":"\/static_new6\/headimg\/151.png","balance":"10.000","freeze_balance":"0.000","tel":"douglasjefferson9636@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":120297,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/www.nassshop.com\/#\/login\/register?code=120297","otc_member_level":0}})
+ })
+
+
     
   app.get('/api/user/userCount', (req,res) => { 
    res.json({"code":1,"msg":"OK","time":1663452598,"data":{"robot_profit":0,"team_profit":0,"order_profit":0,"robot_balance":"0.0000","manual":0,"auto":0,"total":0}})
