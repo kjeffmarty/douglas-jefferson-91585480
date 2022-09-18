@@ -24,7 +24,9 @@ app.get('/api/auth', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})
  })
 
-
+app.post('/api/auth/login', (req,res) => {
+    res.json({"code":1,"msg":"OK","time":1663461589,"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJhdWQiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJpYXQiOjE2NjM0NjE1ODksIm5iZiI6MTY2MzQ2MTU4OSwiZXhwIjoxNjY4NjQ1NTg5LCJqdGkiOnsiaWQiOjEyMDI5NywidHlwZSI6Ikg1In19.0cW6VS_bTaCfyjBPUicVsM5YwslzH7Awt_8HvXZx7EY","userId":120297,"otc_member_level":0}})
+ })
 
  app.get('/api/home', (req,res) => { 
    res.send({"code":50008,"message":"Bad token","data":null})
