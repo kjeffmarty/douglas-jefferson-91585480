@@ -139,27 +139,11 @@ app.get('/api/user/profile', (req,res) => {
    res.json({"code":1,"msg":"OK","time":1663455456,"data":{"username":"MDZ_txg4sr","invite_code":"124604","headpic":"\/static_new6\/headimg\/137.png","balance":"10.000","freeze_balance":"0.000","tel":"douglas96361230@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":124604,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/www.nassshop.com\/#\/login\/register?code=124604","otc_member_level":0}})
 })
 
-app.post('/api/user/profile', (req,res) => { 
-   res.json({"code":1,"msg":"OK","time":1663455456,"data":{"username":"MDZ_txg4sr","invite_code":"124604","headpic":"\/static_new6\/headimg\/137.png","balance":"10.000","freeze_balance":"0.000","tel":"douglas96361230@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":124604,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/www.nassshop.com\/#\/login\/register?code=124604","otc_member_level":0}})
+
+
+app.post('/api/user/updateUser', (req,res) => { 
+   res.json({"code":1,"msg":"OK","time":1663622655,"data":{"robot_profit":0,"team_profit":0,"order_profit":0,"robot_balance":"0.0000","manual":0,"auto":0,"total":0}})
 })
-
-app.put('/api/user/profile/:id', (req,res) => { 
-   res.json({"code":1,"msg":"OK","time":1663455456,"data":{"username":"MDZ_txg4sr","invite_code":"124604","headpic":"\/static_new6\/headimg\/137.png","balance":"10.000","freeze_balance":"0.000","tel":"douglas96361230@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":124604,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/www.nassshop.com\/#\/login\/register?code=124604","otc_member_level":0}})
-})
-
-app.delete('/api/user/profile/:id', (req,res) => { 
-   res.json({"code":1,"msg":"OK","time":1663455456,"data":{"username":"MDZ_txg4sr","invite_code":"124604","headpic":"\/static_new6\/headimg\/137.png","balance":"10.000","freeze_balance":"0.000","tel":"douglas96361230@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":124604,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/www.nassshop.com\/#\/login\/register?code=124604","otc_member_level":0}})
-})
-
- 
-
-
-
-
-
-
-
-
 
 
 
