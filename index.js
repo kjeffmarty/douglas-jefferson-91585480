@@ -23,7 +23,7 @@ app.get('/api/:user/:getBank', (req,res) => {
           "getBank":req.param.getBank,
         }
       }
-       res.json({"code":1,"msg":"OK","time":1663582861,"data":{"id":120297,"uid":120297,"name":"","cardnum":"","bankname":"","address":"","site":"","tel":"sdsd","passport":"","pay_code":"","addtime":1663480858,"qq":null,"type":1,"account_no":"sdsd","accountNo":"","email":"","bank_type":"PHONE","bankType":"PHONE"}})
+       res.json({"code":1,"msg":"OK","time":1663582861,"data":{"id":9662,"uid":120297,"name":"","cardnum":"","bankname":"","address":"","site":"","tel":"sdsd","passport":"","pay_code":"","addtime":1663480858,"qq":null,"type":1,"account_no":"sdsd","accountNo":"","email":"","bank_type":"PHONE","bankType":"PHONE"}})
    }) 
 
 
