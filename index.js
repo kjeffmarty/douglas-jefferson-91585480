@@ -129,7 +129,7 @@ app.get('/api/user/profile', (req,res) => {
    res.json({"code":1,"msg":"OK","time":1663452598,"data":{"robot_profit":0,"team_profit":0,"order_profit":0,"robot_balance":"0.0000","manual":0,"auto":0,"total":0}})
 })
 
-module.exports = app;
+
 
 
 app.listen(port, () => {
