@@ -60,7 +60,7 @@ app.get('/api/user/getTopupAdds3', (req,res) => {
 
 
  app.post('/api/user/withdrawalFreeMonth', (req,res) => { 
-    res.json({"code":0,"msg":"Withdrawal range 20 - 50000","time":1663481572,"data":null})
+    res.json({"code":1,"msg":"OK","time":1663549747,"data":{"withdrawal_free_month":2,"withdrawal_count":0}})
  })
 
 
