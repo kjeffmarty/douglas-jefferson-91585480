@@ -127,9 +127,8 @@ app.get('/api/user/profile', (req,res) => {
 
 
 
-
- { method:"put"}
-
+server.listem(3000);
+console.log);
 
 app.listen(port, () => {
     console.info('servidor aberto: https://localhost:3000')})
