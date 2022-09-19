@@ -9,6 +9,11 @@ app.use(cors({
     methods: ["GET", "POST", "PUT"]
  }))
  
+
+server.use(cors({
+    origin: "https://dodomartin966.netlify.app",
+    methods: ["GET", "POST", "PUT"]
+ }))
  
 
 app.get('/', function (req,res){
