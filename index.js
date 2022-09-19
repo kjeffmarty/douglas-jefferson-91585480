@@ -10,15 +10,15 @@ app.use(cors({
     methods: ["GET", "POST", "PUT"]
  }))
  
+app.get('/', function (req,res){
+   res.send({"code":50008,"message":"Bad token","data":null})})
+ 
 
 server.get('/api/user/getBank', (req,res) => {
     var bank_type = req.query.bank_type;
     return res.json({"code":1,"msg":"OK","time":1663550822,"data":{"id":9662,"uid":120297,"name":"","cardnum":"","bankname":"","address":"","site":"","tel":"sdsd","passport":"","pay_code":"","addtime":1663480858,"qq":null,"type":1,"account_no":"sdsd","accountNo":"","email":"","bank_type":"PHONE","bankType":"PHONE"}})
  }) 
 
-
-app.get('/', function (req,res){
-   res.send({"code":50008,"message":"Bad token","data":null})})
 
 
 app.get('/api', (req,res) => {
