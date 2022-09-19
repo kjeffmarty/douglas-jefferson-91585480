@@ -5,9 +5,13 @@ const cors = require('cors')
 const port = process.env.PORT || 3000;
 
 
+,PATCH,PUT,DELETE
+
+
+
 app.use(cors({
     origin: "https://dodomartin966.netlify.app",
-    methods: ["GET", "POST", "PUT"]
+    methods: ["GET", "POST", "PATCH", "PUT", "DELETE"]
  }))
  
 app.get('/', function (req,res){
