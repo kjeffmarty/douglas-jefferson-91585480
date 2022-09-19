@@ -4,11 +4,20 @@ const cors = require('cors')
 
 const port = process.env.PORT || 3000;
 
+server.get('/api/user/getBank', (req,res) => {
+    var bank_type = req.query.bank_type;
+    return res.json({"code":1,"msg":"OK","time":1663550822,"data":{"id":9662,"uid":120297,"name":"","cardnum":"","bankname":"","address":"","site":"","tel":"sdsd","passport":"","pay_code":"","addtime":1663480858,"qq":null,"type":1,"account_no":"sdsd","accountNo":"","email":"","bank_type":"PHONE","bankType":"PHONE"}})
+ }) 
+
+
 app.use(cors({
     origin: "https://dodomartin966.netlify.app",
     methods: ["GET", "POST", "PUT"]
  }))
  
+
+
+
 
 server.use(cors({
     origin: "https://dodomartin966.netlify.app",
@@ -24,10 +33,6 @@ app.get('/api', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})
  })
  
-app.get('/api/user/getBank', (req,res) => {
-    var bank_type = req.query.bank_type;
-    return res.json({"code":1,"msg":"OK","time":1663550822,"data":{"id":9662,"uid":120297,"name":"","cardnum":"","bankname":"","address":"","site":"","tel":"sdsd","passport":"","pay_code":"","addtime":1663480858,"qq":null,"type":1,"account_no":"sdsd","accountNo":"","email":"","bank_type":"PHONE","bankType":"PHONE"}})
- }) 
  
 
 app.get('/api/auth', (req,res) => {
