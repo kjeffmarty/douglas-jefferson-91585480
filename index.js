@@ -86,7 +86,7 @@ app.get('/api/info', (req,res) => {
  })
 
 app.get('/api/info/withDraw', (req,res) => { 
-    res.json({"code":0,"msg":"Withdrawal range 20 - 50000","time":1663481572,"data":null})
+    res.json({"code":1,"msg":"OK","time":1663549747,"data":{"detail":"<p>The withdrawal time is from Monday to Friday every week. You have two&nbsp;free withdrawal opportunities every month, and the fee for each withdrawal is 10% starting from the third&nbsp;time.<\/p>\r\n\r\n<p>USDT withdrawal minimum $100.<\/p>"}})
  })
 
 
