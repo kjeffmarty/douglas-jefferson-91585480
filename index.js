@@ -32,6 +32,13 @@ app.get('/api/auth', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})
  })
 
+app.post('/api/auth/registered', (req,res) => {
+    res.send({"code":1,"msg":"OK","time":1663618698,"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJhdWQiOiJhZG1pbi5uYXNzc2hvcC5jb20iLCJpYXQiOjE2NjM2MTg2OTgsIm5iZiI6MTY2MzYxODY5OCwiZXhwIjoxNjY4ODAyNjk4LCJqdGkiOnsiaWQiOjEyNTA5OCwidHlwZSI6Ikg1In19.rxi3mmNu4TDR2sIX5iilW7gU74isYQzy_86iisX7VsM","userId":"125098"}})
+ })
+
+
+
+
 
 app.post('/api/auth/emailVerify', (req,res) => {
     res.json({"code":1,"msg":"OK","time":1663618050,"data":{"ip":"45.166.191.237","msg":"297209","addtime":1663618050,"type":"1","tel":"ederfrferferfr2@gmail.com"}})
