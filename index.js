@@ -33,7 +33,7 @@ app.get('/api/auth', (req,res) => {
  })
 
 
-app.get('/api/auth/emailVerify', (req,res) => {
+app.post('/api/auth/emailVerify', (req,res) => {
     res.json({"code":1,"msg":"OK","time":1663618050,"data":{"ip":"45.166.191.237","msg":"297209","addtime":1663618050,"type":"1","tel":"ederfrferferfr2@gmail.com"}})
  })
 
