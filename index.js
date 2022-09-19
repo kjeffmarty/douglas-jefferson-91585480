@@ -18,7 +18,8 @@ app.get('/', function (req,res){
 app.get('/api/:user/:getBank', (req,res) => {
 
    let data = {
-       "api": {
+       "query": {
+        "api":req.api,
          "user":req.param.user,
           "getBank":req.param.getBank,
         }
