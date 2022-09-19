@@ -54,7 +54,7 @@ app.get('/api/home/getShowContent', (req,res) => {
 
  
 app.get('/api/user/withdrawal', (req,res) => { 
-    res.send({"code":0,"msg":"Please set a payment password","time":1663550246,"data":null})
+    res.json({"code":0,"msg":"Please set a payment password","time":1663550246,"data":null})
  })
 
 
