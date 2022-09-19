@@ -15,7 +15,7 @@ app.get('/', function (req,res){
  
 
 
-app.get('/api/user/:getBank', (req,res) => {
+app.get('/api/:user/:getBank', (req,res) => {
 
 
    const bank_type = req.bank_type;query
