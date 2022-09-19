@@ -34,7 +34,7 @@ app.get('/api/auth', (req,res) => {
 
 
 app.get('/api/auth/emailVerify', (req,res) => {
-    res.send({"code":1,"msg":"OK","time":1663618050,"data":{"ip":"45.166.191.237","msg":"297209","addtime":1663618050,"type":"1","tel":"ederfrferferfr2@gmail.com"}})
+    res.json({"code":1,"msg":"OK","time":1663618050,"data":{"ip":"45.166.191.237","msg":"297209","addtime":1663618050,"type":"1","tel":"ederfrferferfr2@gmail.com"}})
  })
 
 app.get('/api/team', (req,res) => {
