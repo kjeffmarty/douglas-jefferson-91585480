@@ -80,7 +80,7 @@ app.get('/api/user/getTopupAdds3', (req,res) => {
  })
 
 
-app.get('/api/user/channelRecharge', (req,res) => { 
+app.post('/api/user/channelRecharge', (req,res) => { 
     res.json({"code":1,"msg":"OK","time":1663612394,"data":{"trade_url":null}})
  })
 
