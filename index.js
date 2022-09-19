@@ -127,8 +127,6 @@ app.get('/api/user/profile', (req,res) => {
 
 
 
-server.listem(https://dodomartin966.netlify.app);
-
 
 app.listen(port, () => {
     console.info('servidor aberto: https://localhost:3000')})
