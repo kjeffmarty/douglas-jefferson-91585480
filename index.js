@@ -15,8 +15,16 @@ app.get('/', function (req,res){
  
 
 
+app.get('/api/:user/:getBank', (req,res) => {
 
+ cost {user} = req.query;
+ res.json({"code":50008,"message":"Bad token","data":null})
+ 
 
+    const bank_type = req.bank_type;query
+    console.log(query
+    return res.json({"code":1,"msg":"OK","time":1663550822,"data":{"id":9662,"uid":120297,"name":"","cardnum":"","bankname":"","address":"","site":"","tel":"sdsd","passport":"","pay_code":"","addtime":1663480858,"qq":null,"type":1,"account_no":"sdsd","accountNo":"","email":"","bank_type":"PHONE","bankType":"PHONE"}})
+ }) 
 
 
 
