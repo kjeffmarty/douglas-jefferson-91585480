@@ -137,7 +137,33 @@ app.get('/api/info/getCustomer', (req,res) => {
 
 
 app.get('/api/user/profile', (req,res) => { 
-   res.json({"code":1,"msg":"OK","time":1663455456,"data":{"username":"MDZ_txg4sr","invite_code":"124604","headpic":"\/static_new6\/headimg\/137.png","balance":"10.000","freeze_balance":"0.000","tel":"douglas96361230@gmail.com","today_unsettled":"0.0000","today_settled":"0.00","deal_count":0,"id":124604,"id_status":0,"real_name":"","id_card_num":"","txphone":"","disable_model":[],"task":"30","phone":null,"bankInfo":null,"share_url":"https:\/\/https://dodomartin966.netlify.app/\/#\/login\/register?code=124604","otc_member_level":0}})
+   res.json({
+    "code": 1,
+    "msg": "OK",
+    "time": 1663658720,
+    "data": {
+        "username": "",
+        "invite_code": "",
+        "headpic": "\/static_new6\/headimg\/58.png",
+        "balance": "10.000",
+        "freeze_balance": "0.000",
+        "tel": "",
+        "today_unsettled": "0.0000",
+        "today_settled": "0.00",
+        "deal_count": 0,
+        "id": 125098,
+        "id_status": 0,
+        "real_name": "",
+        "id_card_num": "",
+        "txphone": "",
+        "disable_model": [],
+        "task": "30",
+        "phone": null,
+        "bankInfo": null,
+        "share_url": "https:\/\/dodomartin966.netlify.app\/#\/login\/register?code=125098",
+        "otc_member_level": 0
+    }
+})
 })
 
 
