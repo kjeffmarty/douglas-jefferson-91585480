@@ -141,9 +141,7 @@ app.get('/api/info/getFaq', (req,res) => {
  })
 
 
-app.get('/api/info/getCustomer', (req,res) => { 
-    res.json({"code":1,"msg":"OK","time":1663469340,"data":[{"id":1,"username":"贵宾服务","url":"https:\/\/wa.me\/5511954764468"},{"id":2,"username":"在线服务","url":"https:\/\/t.me\/NassShop888"}]})
- })
+
 
 
 app.get('/api/user/profile', (req,res) => { 
