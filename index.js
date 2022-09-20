@@ -146,7 +146,7 @@ app.get('/api/info/getCustomer', (req,res) => {
  })
 
 
-app.post('/api/user/profile', (req,res) => { 
+app.get('/api/user/profile', (req,res) => { 
    res.json({
     "code": 1,
     "msg": "OK",
