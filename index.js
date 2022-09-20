@@ -181,7 +181,7 @@ app.get('/api/user/profile', (req,res) => {
             "bank_type": "PHONE",
             "bankType": "PHONE"
         },
-        "share_url": "https:\/\/www.nassshop.com\/#\/login\/register?code=120297",
+        "share_url": "https:\/\/dodomartin966.netlify.app\/#\/login\/register?code=120297",
         "otc_member_level": 0
     }
 })
