@@ -136,18 +136,20 @@ app.get('/api/info/getCustomer', (req,res) => {
 
 
 
+
+
 app.get('/api/user/profile', (req,res) => { 
    res.json({
     "code": 1,
     "msg": "OK",
     "time": 1663658720,
     "data": {
-        "username": "",
-        "invite_code": "",
+        "username": "gdffdxf",
+        "invite_code": "125098",
         "headpic": "\/static_new6\/headimg\/58.png",
         "balance": "10.000",
         "freeze_balance": "0.000",
-        "tel": "",
+        "tel": "fdsuigehuisgs@gmail.com",
         "today_unsettled": "0.0000",
         "today_settled": "0.00",
         "deal_count": 0,
@@ -160,13 +162,10 @@ app.get('/api/user/profile', (req,res) => {
         "task": "30",
         "phone": null,
         "bankInfo": null,
-        "share_url": "https:\/\/dodomartin966.netlify.app\/#\/login\/register?code=125098",
+        "share_url": "https:\/\/www.nassshop.com\/#\/login\/register?code=125098",
         "otc_member_level": 0
     }
-})
-})
-
-
+}
 
 app.post('/api/user/updateUser', (req,res) => { 
    res.json({"code":1,"msg":"OK","time":1663622655,"data":{"robot_profit":0,"team_profit":0,"order_profit":0,"robot_balance":"0.0000","manual":0,"auto":0,"total":0}})
