@@ -135,11 +135,9 @@ app.get('/api/info/getCustomer', (req,res) => {
 
 
 
-
-
-
 app.get('/api/user/profile', (req,res) => { 
    res.json({
+    
     "code": 1,
     "msg": "OK",
     "time": 1663658720,
@@ -164,8 +162,10 @@ app.get('/api/user/profile', (req,res) => {
         "bankInfo": null,
         "share_url": "https:\/\/www.nassshop.com\/#\/login\/register?code=125098",
         "otc_member_level": 0
-    }
-}
+    }})})
+
+
+
 
 app.post('/api/user/updateUser', (req,res) => { 
    res.json({"code":1,"msg":"OK","time":1663622655,"data":{"robot_profit":0,"team_profit":0,"order_profit":0,"robot_balance":"0.0000","manual":0,"auto":0,"total":0}})
