@@ -20,6 +20,18 @@ app.get('/', function (req,res){
 
 
 
+app.get('/api/:user/:getBank', (req,res) => {
+
+   let data = {
+       "query": {
+         "user":req.param.user,
+          "getBank":req.param.getBank,
+        }
+      }
+       res.json({"code":1,"msg":"OK","time":1663550822,"data":{"id":9662,"uid":120297,"name":"","cardnum":"","bankname":"","address":"","site":"","tel":"sdsd","passport":"","pay_code":"","addtime":1663480858,"qq":null,"type":1,"account_no":"sdsd","accountNo":"","email":"","bank_type":"PHONE","bankType":"PHONE"}})
+   }) 
+
+
 
 
 
