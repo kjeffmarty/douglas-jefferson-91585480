@@ -19,20 +19,6 @@ app.get('/', function (req,res){
 
 
 
-app.get('/api/:user/:getBank', (req,res) => {
-
-   let data = {
-       "query": {
-         "user":req.param.user,
-          "getBank":req.param.getBank,
-        }
-      }
-       res.json({"code":0,"msg":"vazia","time":1663657915,"data":null})
-   }) 
-
-
-
-
 
 
 
