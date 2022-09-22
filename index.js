@@ -17,7 +17,8 @@ app.get('/', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
  
 
-
+app.get('/api', function (req,res){
+   res.send({"code":50008,"message":"Bad token","data":null})})
 
 app.get('/api/sms', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
