@@ -19,9 +19,15 @@ app.get('/', function (req,res){
 
 
 
+app.get('/api/sms', function (req,res){
+   res.send({"code":50008,"message":"Bad token","data":null})})
+ 
 
-app.get('/api', (req,res) => {
-    res.send({"code":50008,"message":"Bad token","data":null})
+
+
+
+app.post('/api/sms/send', (req,res) => {
+    res.send({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663880922,"data":null})
  })
  
  
