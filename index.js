@@ -27,7 +27,7 @@ app.get('/api/sms', function (req,res){
 
 
 app.post('/api/sms/send', (req,res) => {
-    res.send({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663880922,"data":null})
+    res.json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663880922,"data":null})
  })
  
  
