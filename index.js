@@ -34,10 +34,10 @@ app.post('/api', (req,res) => {
 app.post('/api/sms', (req,res) => {
         return response.json({"code":50008,"message":"Bad token","data":null})})
 
- app.get('/api/sms/send', function (req,res){
-    return res.json({"code":50008,"message":"Bad token","data":null})})
-  
 
+app.get('/api/sms/send', function (req,res){
+    return res.json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663898631,"data":null})})
+  
 
     app.post('/api/sms/send', function (req,res){
         const dados = req.body
