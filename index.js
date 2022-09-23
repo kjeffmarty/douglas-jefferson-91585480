@@ -13,29 +13,43 @@ app.use(cors({
     methods: ["GET", "POST", "PATCH","PUT", "DELETE"]
  }))
  
+
+const projects = [];
+ 
 app.get('/', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
  
 
+
 app.get('/api', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
 
-app.get('/api/sms', function (req,res){
-   res.send({"code":50008,"message":"Bad token","data":null})})
+
+
+ app.get('/api/sms', function (req,res){
+    res.send({"code":50008,"message":"Bad token","data":null})})
+ 
  
 
-
+ app.get('/api/sms/send', function (req,res){
+    res.send({"code":50008,"message":"Bad token","data":null})})
+  
 
 
 app.post('/api/sms/send', (req,res) => {
-    res.json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663880922,"data":null})
- })
- 
- 
+    const { code, msg, time, data } = request.body;
 
+    const send = {
+        code,
+        msg,
+        time,
+        data,
+    }
 
- 
-
+    projects.push(send);
+    return response.status(201).json(send);
+     
+ });
  
 
 
