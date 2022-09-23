@@ -14,7 +14,7 @@ app.use(cors({
  }))
  
 
-const projects = [];
+
  
 app.get('/', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
@@ -39,7 +39,7 @@ app.post('/api/sms', (req,res) => {
   
 
 
-    app.post('/api/sms/send', (req,res) => {
+    app.post('/api/sms/send', function (req,res){
         const dados = req.body
         const code = dados.code
         const mgm = dados.mgm
