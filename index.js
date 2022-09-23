@@ -41,7 +41,7 @@ app.get('/api/sms/send', function (req,res){
         const time = dados.time
         const data = dados.data
         
-        return res.json({"code":,"msg":,"time""data"})})
+        return res.json({"code" "msg" "time" "data"})})
 tes
         
      
