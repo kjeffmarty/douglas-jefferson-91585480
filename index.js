@@ -40,10 +40,10 @@ app.get('/api/sms/send', function (req,res){
         const mgm = dados.mgm
         const time = dados.time
         const data = dados.data
+        return res.json({"code":0,"msg":"Incorrect phone format","time":1663908608,"data":null})
+        return res.json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663898631,"data":null})})
 
-        return res.json({"code":1,"msg":"mgm","time":1663898631,"data":null})})
-
- 
+        
      
  
  
