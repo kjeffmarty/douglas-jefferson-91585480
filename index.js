@@ -5,7 +5,7 @@ const cors = require('cors')
 const port = process.env.PORT || 3000;
 
 app.use(cors({
-    origin: "https://dodomartin966.netlify.app",
+    origin: "https://http://127.0.0.1:5500",
     methods: ["GET", "POST", ]
  }))
  
