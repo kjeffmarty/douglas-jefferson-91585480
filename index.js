@@ -19,37 +19,39 @@ const projects = [];
 app.get('/', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
  
-
+   app.post('/', (req,res) => {
+    return response.json({"code":50008,"message":"Bad token","data":null})})
 
 app.get('/api', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
 
-
+app.post('/api', (req,res) => {
+    return response.json({"code":50008,"message":"Bad token","data":null})})
 
  app.get('/api/sms', function (req,res){
     res.send({"code":50008,"message":"Bad token","data":null})})
  
- 
+app.post('/api/sms', (req,res) => {
+        return response.json({"code":50008,"message":"Bad token","data":null})})
 
  app.get('/api/sms/send', function (req,res){
-    res.send({"code":50008,"message":"Bad token","data":null})})
+    return res.json({"code":50008,"message":"Bad token","data":null})})
   
 
 
-app.post('/api/sms/send', (req,res) => {
-    const { code, msg, time, data } = request.body;
+    app.post('/api/sms/send', (req,res) => {
+        const dados = req.body
+        const code = dados.code
+        const mgm = dados.mgm
+        const time = dados.time
+        const data = dados.data
 
-    const send = {
-        code,
-        msg,
-        time,
-        data,
-    }
+        return res.json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663898631,"data":null})})
 
-    projects.push(send);
-    return response.status(201).json(send);
+ 
      
- });
+ 
+ 
  
 
 
