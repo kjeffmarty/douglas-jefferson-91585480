@@ -40,7 +40,7 @@ app.get('/api/sms/send', function (req,res){
         const time = dados.time
         const data = dados.data
         
-       return res.json({"code":0,"msg":"Incorrect phone format","time":1663912062,"data":null})})
+       return Response.json({"code":0,"msg":"Incorrect phone format","time":1663912062,"data":null})})
 
  app.get('/api/product', function (req,res){
     res.send({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663898631,"data":null})})       
@@ -67,7 +67,10 @@ app.get('/api/index', function (req,res){
 
  
 app.post('/api/index/services', function (req,res){
-    const dados = req.body
+    
+        let code = request.body.code
+        let code = request.body.
+        
    return res.json({"code":1,"msg":"","time":1663992384,"data":[{"id":7,"kind":"Telegram","nickname":"Theodorec","avatar":"https:\/\/www.theodorec.com\/upload\/20220909\/ed048b5ace5969004973e9ca33911c16.jpg","linkurl":"https:\/\/t.me\/Theodorec01","online":1,"sort":99,"status":1}]})})
  
  
