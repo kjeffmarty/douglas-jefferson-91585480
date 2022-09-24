@@ -31,6 +31,12 @@ app.post('/api', (req,res) => {
  app.get('/api/user', function (req,res){
     res.send({"code":50008,"message":"Bad token","data":null})})
 
+ app.post('/api/user/getRechargeW', function (req,res){
+    res.json({"code":1,"msg":"","time":1664048954,"data":{"recharge_award":"0","unfreeze_recharge_award":"100"}})})
+
+ app.post('/api/user/index', function (req,res){
+    res.json({"code":1,"msg":"","time":1664048954,"data":{"userinfo":{"id":53652,"username":"douglas","nickname":"douglas","mobile":"5561998770447","avatar":"https:\/\/www.theodorec.com\/upload\/20220418\/ae6c88330f04eca765d404138e0b2e2f.png","level":1,"bio":"","money":"0.0000","recom_money":"0.0000","valid_money":"0.0000","freeze_money":0,"topup_money":"0.0000","cash_money":"0.0000","score":0,"recomno":"8689541","user_pid":51960,"recom_nums":0,"realauth":0,"status":"normal","agent_id":5,"recharge_gold":"0.00","is_recharge":0,"recharge_gold_case_time":0,"is_give_recharge":0,"issue_u":0,"trc_address":"TThhtTDHpFeNQBXH8wEMdDiBCotW8MPH9g","token":"dc1b8330-c8d0-41e8-b871-58abb3256b37","user_id":53652,"createtime":1664042903,"expiretime":1666634903,"expires_in":2585949,"less_amount":"500.00","vip_img":"https:\/\/www.theodorec.com\/upload\/20220909\/61ab1e34c0ee7bc57a9713d1fea8dec9.png"}}})})
+
 
  app.get('/api/user/login', function (req,res){
     res.json({"code":1,"msg":"Login successful","time":1664010265,"data":{"userinfo":{"id":53652,"username":"douglas","nickname":"douglas","mobile":"5561998770447","avatar":"https:\/\/www.theodorec.com\/upload\/20220418\/ae6c88330f04eca765d404138e0b2e2f.png","level":1,"bio":"","money":"0.0000","recom_money":"0.0000","valid_money":"0.0000","freeze_money":"0.0000","topup_money":"0.0000","cash_money":"0.0000","score":0,"recomno":"8689541","user_pid":51960,"recom_nums":0,"realauth":0,"status":"normal","agent_id":5,"recharge_gold":"0.00","is_recharge":0,"recharge_gold_case_time":0,"is_give_recharge":0,"issue_u":0,"trc_address":"TThhtTDHpFeNQBXH8wEMdDiBCotW8MPH9g","token":"a4e69765-b987-441a-8504-20ea0f9fc6d1","user_id":53652,"createtime":1664010265,"expiretime":1666602265,"expires_in":2592000}}})})
