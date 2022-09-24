@@ -8,7 +8,7 @@ app.use(express.json())
 
 app.use(cors({
     origin: "https://dodomartin966.netlify.app",
-    methods: ["GET", "POST", ]
+    methods: ["GET", "POST", "PUT", "DELETE" ]
  }))
  
  
