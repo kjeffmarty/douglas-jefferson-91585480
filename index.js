@@ -76,7 +76,7 @@ app.post('/api/index/services', function (req,res){
         const data = dados.data
         
         
-   return res.json({"code":,"msg":"","time":,"data":[{"id":7,"kind":"Telegram","nickname":"Theodorec","avatar":"https:\/\/www.theodorec.com\/upload\/20220909\/ed048b5ace5969004973e9ca33911c16.jpg","linkurl":"https:\/\/t.me\/Theodorec01","online":1,"sort":99,"status":1}]})})
+   return res.json({"code":1,"msg":"","time":1663992384,"data":[{"id":7,"kind":"Telegram","nickname":"Theodorec","avatar":"https:\/\/dodomartin966.netlify.app\/upload\/20220909\/ed048b5ace5969004973e9ca33911c16.jpg","linkurl":"https:\/\/t.me\/Theodorec01","online":1,"sort":99,"status":1}]})})
  
  
 
