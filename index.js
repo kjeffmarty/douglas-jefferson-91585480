@@ -32,9 +32,13 @@ app.post('/api', (req,res) => {
     res.send({"code":50008,"message":"Bad token","data":null})})
 
 
+ app.get('/api/user/login', function (req,res){
+    res.json({"code":1,"msg":"Login successful","time":1664010265,"data":{"userinfo":{"id":53652,"username":"douglas","nickname":"douglas","mobile":"5561998770447","avatar":"https:\/\/www.theodorec.com\/upload\/20220418\/ae6c88330f04eca765d404138e0b2e2f.png","level":1,"bio":"","money":"0.0000","recom_money":"0.0000","valid_money":"0.0000","freeze_money":"0.0000","topup_money":"0.0000","cash_money":"0.0000","score":0,"recomno":"8689541","user_pid":51960,"recom_nums":0,"realauth":0,"status":"normal","agent_id":5,"recharge_gold":"0.00","is_recharge":0,"recharge_gold_case_time":0,"is_give_recharge":0,"issue_u":0,"trc_address":"TThhtTDHpFeNQBXH8wEMdDiBCotW8MPH9g","token":"a4e69765-b987-441a-8504-20ea0f9fc6d1","user_id":53652,"createtime":1664010265,"expiretime":1666602265,"expires_in":2592000}}})})
+
 
  app.post('/api/user/login', function (req,res){
-    res.json({"code":1,"msg":"Login successful","time":1664010265,"data":{"userinfo":{"id":53652,"username":"douglas","nickname":"douglas","mobile":"5561998770447","avatar":"https:\/\/www.theodorec.com\/upload\/20220418\/ae6c88330f04eca765d404138e0b2e2f.png","level":1,"bio":"","money":"0.0000","recom_money":"0.0000","valid_money":"0.0000","freeze_money":"0.0000","topup_money":"0.0000","cash_money":"0.0000","score":0,"recomno":"8689541","user_pid":51960,"recom_nums":0,"realauth":0,"status":"normal","agent_id":5,"recharge_gold":"0.00","is_recharge":0,"recharge_gold_case_time":0,"is_give_recharge":0,"issue_u":0,"trc_address":"TThhtTDHpFeNQBXH8wEMdDiBCotW8MPH9g","token":"a4e69765-b987-441a-8504-20ea0f9fc6d1","user_id":53652,"createtime":1664010265,"expiretime":1666602265,"expires_in":2592000}}})})
+     const dados = req.body
+   return res.json({"code":1,"msg":"Login successful","time":1664010265,"data":{"userinfo":{"id":53652,"username":"douglas","nickname":"douglas","mobile":"5561998770447","avatar":"https:\/\/www.theodorec.com\/upload\/20220418\/ae6c88330f04eca765d404138e0b2e2f.png","level":1,"bio":"","money":"0.0000","recom_money":"0.0000","valid_money":"0.0000","freeze_money":"0.0000","topup_money":"0.0000","cash_money":"0.0000","score":0,"recomno":"8689541","user_pid":51960,"recom_nums":0,"realauth":0,"status":"normal","agent_id":5,"recharge_gold":"0.00","is_recharge":0,"recharge_gold_case_time":0,"is_give_recharge":0,"issue_u":0,"trc_address":"TThhtTDHpFeNQBXH8wEMdDiBCotW8MPH9g","token":"a4e69765-b987-441a-8504-20ea0f9fc6d1","user_id":53652,"createtime":1664010265,"expiretime":1666602265,"expires_in":2592000}}})})
 
 
 
@@ -48,7 +52,7 @@ app.post('/api', (req,res) => {
 
 
  app.post('/api/user/register', function (req,res){
-    res.json({"code":0,"msg":"Unknown parameter","time":1664009373,"data":null})})
+  return res.json({"code":0,"msg":"Unknown parameter","time":1664009373,"data":null})})
 
 
 
