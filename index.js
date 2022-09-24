@@ -26,6 +26,19 @@ app.post('/api', (req,res) => {
 
  app.get('/api/sms', function (req,res){
     res.send({"code":50008,"message":"Bad token","data":null})})
+
+
+ app.get('/api/user', function (req,res){
+    res.send({"code":50008,"message":"Bad token","data":null})})
+
+
+
+ app.post('/api/user/register', function (req,res){
+    res.json({"code":0,"msg":"Unknown parameter","time":1664009373,"data":null})})
+
+
+
+
  
 app.post('/api/sms', (req,res) => {
         return response.json({"code":50008,"message":"Bad token","data":null})})
