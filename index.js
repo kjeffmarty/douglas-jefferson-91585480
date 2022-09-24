@@ -9,7 +9,6 @@ app.use(cors({
     methods: ["GET", "POST", ]
  }))
  
-app.use(express.json());
  
 app.get('/', function (req,res){
    res.send({"code":50008,"message":"Bad token","data":null})})
