@@ -102,7 +102,7 @@ app.get('/api/product/index', function (req,res){
   app.post('/api/product/index', (req,res) => {
          const user = req.body;
          users.push(user);
-       res.status(201).send('created user);
+       res.status(201).send('created user');
     })
       
 
