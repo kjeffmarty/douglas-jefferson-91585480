@@ -4,6 +4,12 @@ const cors = require('cors')
 
 app.use(express.urlencoded({ extended: false }))
 
+
+
+const users = [
+    { name: 'alison', age: 22 },
+    ];
+
 const port = process.env.PORT || 3000;
 
 app.use(express.json())
