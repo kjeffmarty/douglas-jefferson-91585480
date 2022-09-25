@@ -100,8 +100,9 @@ app.get('/api/product/index', function (req,res){
 
 
   app.post('/api/product/index', (req,res) => {
-         console.log(req.body);
-       req.status(201).json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663898631,"data":null});
+         const user = req.body;
+         users.push(user);
+       res.status(201).send('created user);
     })
       
 
