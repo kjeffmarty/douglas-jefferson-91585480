@@ -101,7 +101,7 @@ app.get('/api/product/index', function (req,res){
 
   app.post('/api/product/index', (req,res) => {
          console.log(req.body);
-       return req.status(201).send('created user');
+       req.status(201).send('created user');
     })
       
 
