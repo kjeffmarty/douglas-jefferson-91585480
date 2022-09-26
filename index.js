@@ -96,20 +96,6 @@ app.get('/api/sms/send', function (req,res){
         return res.json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663997227,"data":null})})
        
 
-  app.post('/api/sms/send', (req,res) => {
-         const login = req.body;
-         users.push(user);
-       res.status(201).json({"code":1,"msg":"Successfully sent, the verification code is valid for 30 minutes","time":1663997227,"data":null}]});
-    })
-      
-
- app.post('/api/sms/send', (req,res) => {
-         const login = req.body;
-         users.push(user);
-       res.status(500).json({"code":500,"msg":"An error occurred","time":1664225866,"data":null}]});
-    })
-      
-
 
 
 
